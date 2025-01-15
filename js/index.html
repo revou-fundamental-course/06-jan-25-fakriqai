@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portofolio</title>
+    <!-- Style Library -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="nav-logo">Portofolio Fakhri </a>
+
+      <div class="nav-row">
+        <div class="nav-menu">
+          <a href="#home">Beranda</a>
+          <a href="#about">Tentang Saya</a>
+          <a href="#project">Project</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+
+        <div class="nav-plus">
+          <a href="#" id="menu"><i data-feather="menu"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Nabvar end -->
+
+    <!-- Hero Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <!-- <h3>Halo Semua <span> saya</span></h3> -->
+        <h3>Halo <span id="name">Semua</span></h3>
+        <p>Selamat datang di website portofolio</p>
+        <h1>Muhamad Fakhri Qairawan</h1>
+        <p>GIS Specialist</p>
+        <a href="#home" class="button">Download Resume</a>
+      </main>
+    </section>
+    <!-- Hero End -->
+    <!-- Section About -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <div class="image-profil">
+          <img class="image-slide" src="img/profil-about.png" alt="Tentang Kami" />
+          <img class="image-slide" src="img/profil2.jpg" alt="Tentang Kami" />
+          <img class="image-slide" src="img/profil3.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Tentang Saya</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis laudantium vitae provident numquam delectus odio? Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Vel obcaecati veniam, dolorem dolorum soluta quas?
+          </p>
+
+          <div class="table-list">
+            <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+            <p class="tab-links" onclick="opentab(event, 'pengalaman')">Pengalaman</p>
+            <p class="tab-links" onclick="opentab(event, 'pendidikan')">Pendidikan</p>
+          </div>
+          <div class="table-contents active-content" id="skills">
+            <ul>
+              <li>
+                <span>GIS Analyst</span><br />
+                ArcGIS, ArcMap, Envi, Google Earth Engine dan QGIS
+              </li>
+              <li>
+                <span>Web GIS Development dan Mobile GIS Development</span><br />
+                HTML, CSS, Javascript, React Native JS, Postgres GIS, PostgreSQL, dan Firebase
+              </li>
+            </ul>
+          </div>
+          <div class="table-contents" id="pengalaman">
+            <ul>
+              <li>
+                <span>Diroktorat Pleindungan Kebudayaan | Agust 2023 - Des 2023</span><br />
+                Asisten Pendataan Objek Pemajuan Kebudayaan
+              </li>
+              <li>
+                <span>Badan Riset Inovasi dan Nasional | Feb 2023 - Jul 2023</span><br />
+                Research Intern sebagai GIS Progammer
+              </li>
+            </ul>
+          </div>
+          <div class="table-contents" id="pendidikan">
+            <ul>
+              <li>
+                <span>2020 - 2024</span><br />
+                DIV Sistem Informasi Geografis Universitas Gadjah Mada
+              </li>
+              <li>
+                <span>2023</span><br />
+                Peserta Bootcamp UI/UX Research di Harisenin.com
+              </li>
+              <li>
+                <span>2017 - 2020</span><br />
+                Siswa SMA N 3 Kota Tegal
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section About And -->
+
+    <!-- Section Project -->
+    <section class="project" id="project">
+      <h3>Project</h3>
+      <div class="row-portofolio">
+        <div class="table-list-portofolio">
+          <h2 class="tab-links-portofolio active-link-porto" onclick="openporto(event, 'porto-webs')">WebGIS Applications and Mobile GIS</h2>
+          <h2 class="tab-links-portofolio" onclick="openporto(event, 'porto-gis')">Visualisasi Data dan Peta Tematik</h2>
+        </div>
+        <div class="daftar-portofolio active-porto" id="porto-webs">
+          <div class="tab-contents-portofolio">
+            <div class="protofolio-row">
+              <div class="cover-portofolio">
+                <img src="img/porto1.png" alt="Portofolio 1" />
+                <div class="layer">
+                  <a>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="portofolio-title">
+                <h3>Peta Story KCBN Muara Jambi</h3>
+              </div>
+              <div class="porto-tags">
+                <div>ArcMap</div>
+                <div>ArcGIS Online</div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
+              </p>
+            </div>
+          </div>
+          <div class="tab-contents-portofolio">
+            <div class="protofolio-row">
+              <div class="cover-portofolio">
+                <img src="img/porto2.png" alt="Portofolio 1" />
+                <div class="layer">
+                  <a>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="portofolio-title">
+                <h3>Website Edukasi Bahaya Merkuri</h3>
+              </div>
+              <div class="porto-tags">
+                <div>ArcMap</div>
+                <div>ArcGIS Online</div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
+              </p>
+            </div>
+          </div>
+          <div class="tab-contents-portofolio">
+            <div class="protofolio-row">
+              <div class="cover-portofolio">
+                <img src="img/porto3.png" alt="Portofolio 1" />
+                <div class="layer">
+                  <a>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="portofolio-title">
+                <h3>Aplikasi Mobile Android TsunamiSafe</h3>
+              </div>
+              <div class="porto-tags">
+                <div>React Native Js</div>
+                <div>Firebase</div>
+                <div>Map API</div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
+              </p>
+            </div>
+          </div>
+          <div class="tab-contents-portofolio">
+            <div class="protofolio-row">
+              <div class="cover-portofolio">
+                <img src="img/porto4.png" alt="Portofolio 1" />
+                <div class="layer">
+                  <a>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="portofolio-title">
+                <h3>Design UI/UX Mobile Sistem Informasi Kebudayaan Jambi</h3>
+              </div>
+              <div class="porto-tags">
+                <div>Miro</div>
+                <div>Figma</div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
+              </p>
+            </div>
+          </div>
+          <div class="tab-contents-portofolio">
+            <div class="protofolio-row">
+              <div class="cover-portofolio">
+                <img src="img/porto5.png" alt="Portofolio 1" />
+                <div class="layer">
+                  <a>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="portofolio-title">
+                <h3>Dashborad: Child Abuse Case of Central Java Province in 2020</h3>
+              </div>
+              <div class="porto-tags">
+                <div>Supermap</div>
+                <div>Ms. Excel</div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
+              </p>
+            </div>
+          </div>
+          <div class="tab-contents-portofolio">
+            <div class="protofolio-row">
+              <div class="cover-portofolio">
+                <img src="img/porto6.png" alt="Portofolio 1" />
+                <div class="layer">
+                  <a>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="portofolio-title">
+                <h3>Web App: Peta Perubahan Lahan Kulon Progo</h3>
+              </div>
+              <div class="porto-tags">
+                <div>ArcMap</div>
+                <div>ArcGIS Online</div>
+                <div>Envi</div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="daftar-portofolio" id="porto-gis">
+          <div class="tab-contents-portofolio">
+            <div class="protofolio-row">
+              <div class="cover-portofolio">
+                <img src="img/portogis1.jpg" alt="Portofolio 1" />
+                <div class="layer">
+                  <a>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="portofolio-title">
+                <h3>Peta Persebaran Kandungan Merkuri Kalurahan Kalirejo</h3>
+              </div>
+              <div class="porto-tags">
+                <div>ArcMap</div>
+                <div>Ms. Excel</div>
+                <div>Mobile Topographer</div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
+              </p>
+            </div>
+          </div>
+          <div class="tab-contents-portofolio">
+            <div class="protofolio-row">
+              <div class="cover-portofolio">
+                <img src="img/portogis2.png" alt="Portofolio 1" />
+                <div class="layer">
+                  <a>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="portofolio-title">
+                <h3>Peta Probalitas Kebakaran Hutan dan Lahan Pulau Kalimantan</h3>
+              </div>
+              <div class="porto-tags">
+                <div>R Studio</div>
+                <div>Arcmap</div>
+                <div>R Studio</div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
+              </p>
+            </div>
+          </div>
+          <div class="tab-contents-portofolio">
+            <div class="protofolio-row">
+              <div class="cover-portofolio">
+                <img src="img/portogis3.jpg" alt="Portofolio 1" />
+                <div class="layer">
+                  <a>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="portofolio-title">
+                <h3>Peta Tentative Penggunaan Lahan Sebagian Wilayah Semarang</h3>
+              </div>
+              <div class="porto-tags">
+                <div>ArcMap</div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate in quisquam veniam sapiente, necessitatibus ad est eum et excepturi quod labore molestiae tenetur accusantium! Vitae cum expedita cumque ex.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="load-more-container">
+        <button id="loadMoreBtn">Tampilkan Semua</button>
+        <button id="lessMoreBtn" style="display: none">Tampilkan Lebih Sedikit</button>
+      </div>
+    </section>
+
+    <!-- End section Project -->
+
+    <!-- Section Kontak -->
+    <section id="kontak">
+      <div class="kontak-row">
+        <div class="right-side-kontak">
+          <h3>Kontak</h3>
+          <p><i class="fa-brands fa-whatsapp"></i> 082325100540</p>
+          <p><i class="fa-solid fa-envelope"></i> fakriqairawan7@gmail.com</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-solid fa-square-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="left-side-kontak">
+          <form name="messages" onsubmit="return Validation()">
+            <input type="text" name="nama-form" placeholder="Masukan Nama Anda" />
+            <input type="email" name="email-form" placeholder="Masukan Email Anda" />
+            <textarea name="pesan-form" rows="6" placeholder="Masukan Pesan Anda"></textarea>
+
+            <button class="button-submit" type="submit" value="Submit">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <p>Created By Fakhri</p>
+    </section>
+    <!-- End Secntion Kontak -->
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Javascript -->
+    <script src="javascript/script.js"></script>
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+      function showDivs(n) {
+        var i;
+        var imglist = document.getElementsByClassName("image-slide");
+        if (n > imglist.length) slideIndex = 1;
+        else if (n < 1) slideIndex = imglist.length;
+
+        for (i = 0; i < imglist.length; i++) {
+          imglist[i].style.display = "none";
+        }
+        imglist[slideIndex - 1].style.display = "block";
+      }
+
+      setInterval(() => {
+        plusDivs(1);
+      }, 2000);
+    </script>
+  </body>
+</html>
